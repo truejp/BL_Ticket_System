@@ -7,7 +7,7 @@ class Mailbox
     /** @var \PhpImap\Mailbox mailbox */
     protected $mailbox;
 
-    public function login($host, $port, $user, $pass, $folder = 'INBOX', $ssl = false, $options = null)
+    public function login($host, $port, $user, $pass, $folder = 'Posteingang', $ssl = false, $options = null)
     {
         $ssl           = ($ssl == false) ? '/novalidate-cert' : '/ssl';
         $options       = $options ?: '/pop3';
